@@ -9,7 +9,13 @@
     <input ng-model="sum">
     <h3>Reviews</h3>
     <ul>
-      <li ng-repeat="review in reviews">{{ review }}</li>
+      <li ng-repeat="review in reviews">
+        <p>{{ review }}</p>
+        <input ng-model="review">
+      </li>
     </ul>
+    <h3>Add a review</h3>
+    <input ng-model="newReviewText">
+    <button ng-click="addReview(newReviewText)">Add Review</button>
   </div>
 </div>
