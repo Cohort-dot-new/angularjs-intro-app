@@ -9,7 +9,7 @@
     <input ng-model="sum">
     <h3>Reviews</h3>
     <ul>
-      <li ng-repeat="review in reviews">
+      <li ng-repeat="review in reviews" ng-if="isPositive(review)">
         <p>{{ review }}</p>
         <input ng-model="review">
       </li>
