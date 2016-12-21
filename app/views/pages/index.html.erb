@@ -1,12 +1,7 @@
 <h1>Welcome to Angular</h1>
 
 <div ng-app="app">
-  {{ 123 * 1432 }}
   <div ng-controller="stuffCtrl">
-    <p>{{ myMessage }}</p>
-    <p>Name: {{ myName }}</p>
-    <p>Sum: {{ sum }}</p>
-    <input ng-model="sum">
     <h3>Reviews</h3>
     <ul>
       <li ng-repeat="review in reviews" ng-if="isPositive(review)">
